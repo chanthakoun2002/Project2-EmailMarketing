@@ -1,0 +1,223 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;1,200;1,300&display=swap');
+
+html{
+    font-family:'Monserrat', sans-serif ;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+body {
+    max-width: 1400px;
+    margin: auto;
+    background-color:aliceblue;
+}
+h1{
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    font-size: 2.0rem;
+    line-height: 2.5rem;
+    text-indent: 0.5rem;
+    margin: 0;
+    padding: auto;
+}
+h2 {
+    font-size: 1.4rem;
+    margin: 0;
+}
+h3{
+    font-size: 1.2em;
+    margin: 0; 
+}
+h4{
+    font-size: 0.8rem;
+    margin: 0; 
+}
+p{
+    color: rgb(85, 66, 42);
+    font-size: 25px;
+}
+
+header {
+    background-color:rgb(91, 117, 79);
+    text-align: center;
+    padding: 0.4rem;  
+}
+header a {
+    color: #1a0303;
+    text-decoration:none;
+    padding: 1.0rem;
+    font-weight: 500;
+}
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 1.0rem;
+    color: #ffffff;
+    font-size: 0.67rem;
+ }
+
+
+#top-container{
+    text-align: center;
+    position: relative;
+    background-color: aliceblue;
+}
+.Brand-Name{
+    color: rgb(203, 221, 221);
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.Main-info{
+    text-align: center;
+    margin: 0.7rem;
+    padding-bottom: 0.5rem;
+}
+.Main-info p{
+   font-size: 28px;
+}
+.Products{ /*product grids*/
+    display:grid;
+  grid-template-columns: auto auto auto auto;
+
+}
+.Product-1{
+    grid-column-start: 1;
+}
+.Product-1 img{
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+}
+.Product-2{
+    grid-column-start: 2;
+}
+.Product-2 img{
+    object-fit:cover;
+    width: 100%;
+    max-height: 100%;
+}
+.Product-3{
+    grid-column-start: 3;
+}
+.Product-3 img{
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+}
+.Product-4{
+    grid-column-start: 4;
+}
+.Product-4 img{
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+}
+/*main sub info grid + sub products grid*/
+#Main-Sub-Info{
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    padding-top: 1.0rem;
+}
+.Sub-Info-Header{
+    font-size: 1.5rem;
+    text-align: center;
+    grid-row-start: 1;
+}
+.Sub-Info-Text{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-row-start: 2;
+    padding-bottom: 1.0rem;
+}
+.Sub-Info-Left{
+    grid-column-start: 1;
+    text-align: center;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+}
+.Sub-Info-Center{
+    grid-column-start: 2;
+    text-align: center;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+}
+.Sub-Info-Right{
+    grid-column-start: 3;
+    text-align: center;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+}
+.Sub-Products-Header{
+    grid-row-start: 3;
+    text-align: center;
+}
+.Sub-product-Grid{
+    grid-row-start: 4;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    place-items: center;
+}
+.Sub-Product-1{  /*grid with images*/
+    grid-column-start: 1;
+}
+.Sub-Product-2{
+    grid-column-start: 2;
+}
+.Sub-Product-3{
+    grid-column-start: 3;
+}
+
+
+#Other-Info{ /*information grids*/
+    padding-top: 1.0rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+#Other-Info-Left{ /*left column*/
+    grid-column-start: 1;
+    grid-template-rows: auto auto auto;
+    padding-right: 0.5rem;
+}
+.Left-Info-Row1{
+    grid-row-start: 1;
+    margin: 1rem;
+    padding-bottom: 0.5rem;
+}
+.Left-Info-Row2{
+    grid-row-start: 2;
+    margin: 1rem;
+    padding-bottom: 0.5rem;
+}
+.Left-Info-Row3{
+    grid-row-start: 3;
+    margin: 1rem;
+    padding-bottom: 0.5rem;
+}
+#Other-Info-Right{ /*right column*/
+    grid-column-start: 2;
+    grid-template-rows: auto auto auto;
+    padding-left: 0.5rem;
+}
+.right-Info-Row1{
+    grid-row-start: 1;
+    margin: 1rem;
+    padding-bottom: 0.5rem;
+}
+.right-Info-Row2{
+    grid-row-start: 2;
+    margin: 1rem;
+    padding-bottom: 0.5rem;
+}
+.right-Info-Row3{
+    grid-row-start: 3;
+    margin: 1rem;
+    padding-bottom: 0.5rem;
+}
